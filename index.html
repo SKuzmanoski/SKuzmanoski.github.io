@@ -3,70 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stefan Kuzmanoski - Portfolio</title>
+    <title>Stefan Kuzmanoski</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
+<body class="dark-theme">
+    <!-- Navigation -->
+    <nav class="nav-wrapper black sticky">
         <div class="container">
-            <h1>Stefan Kuzmanoski</h1>
-            <p>Software Engineer | Innovator | Problem Solver</p>
+            <a href="#" class="brand-logo">Stefan Kuzmanoski</a>
+            <a href="#" class="sidenav-trigger" data-target="mobile-menu"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#about" class="scroll-link">About</a></li>
+                <li><a href="#experience" class="scroll-link">Experience</a></li>
+                <li><a href="#projects" class="scroll-link">Projects</a></li>
+                <li><a href="#contact" class="scroll-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-menu">
+        <li><a href="#about" class="scroll-link">About</a></li>
+        <li><a href="#experience" class="scroll-link">Experience</a></li>
+        <li><a href="#projects" class="scroll-link">Projects</a></li>
+        <li><a href="#contact" class="scroll-link">Contact</a></li>
+    </ul>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container">
+            <h1>Hi, I'm <span class="highlight">Stefan Kuzmanoski</span>.</h1>
+            <p class="hero-text">I build scalable, efficient, and innovative software solutions.</p>
+            <a href="#about" class="btn btn-large waves-effect waves-light gradient-button scroll-link">Learn More</a>
         </div>
     </header>
 
-    <nav>
-        <ul class="container">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <section id="about" class="container">
-        <h2>About Me</h2>
-        <p>
-            I am a software engineer with experience working with diverse teams and stakeholders. My expertise includes Java, Spring Boot, PostgreSQL, microservices, and developing innovative solutions to complex problems.
-        </p>
-    </section>
-
-    <section id="experience" class="container">
-        <h2>Experience</h2>
-        <div class="experience-item">
-            <h3>Endava / AM Engineer</h3>
-            <p><strong>Oct 2022 - Present | Skopje</strong></p>
-            <ul>
-                <li>Optimized applications for media and healthcare companies.</li>
-                <li>Developed software for blood storage and media advertising.</li>
-                <li>Led innovation lab projects using OpenAI GPT and Spring Boot.</li>
-            </ul>
-        </div>
-        <!-- Add other experiences similarly -->
-    </section>
-
-    <section id="education" class="container">
-        <h2>Education</h2>
-        <div class="education-item">
-            <h3>FINKI / SEIS (Software Engineering and Information Systems)</h3>
-            <p><strong>2018 - Present | Skopje</strong></p>
-            <p>Focused on advanced programming, databases, algorithms, and more.</p>
+    <!-- About Section -->
+    <section id="about" class="section container">
+        <h2 class="center-align section-title">About Me</h2>
+        <div class="row">
+            <div class="col s12 m6">
+                <p>
+                    I'm a software engineer with experience in Java, Spring Boot, PostgreSQL, and microservices. 
+                    I excel in developing efficient solutions, collaborating with teams, and leading innovative projects.
+                </p>
+            </div>
+            <div class="col s12 m6">
+                <img src="profile_cyan_background_1.png" alt="My Picture" class="responsive-img rounded-circle">
+            </div>
         </div>
     </section>
 
-    <section id="contact" class="container">
-        <h2>Contact</h2>
-        <ul>
-            <li>Email: <a href="mailto:kuzmanoski.stefan@yahoo.com">kuzmanoski.stefan@yahoo.com</a></li>
-            <li>Phone: +389 77 891 617</li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/stefan-kuzmanoski-2664371a7/" target="_blank">LinkedIn Profile</a></li>
-        </ul>
+    <!-- Experience Section -->
+    <section id="experience" class="section container">
+        <h2 class="center-align section-title">Experience</h2>
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card hoverable rounded">
+                    <div class="card-content">
+                        <span class="card-title">Endava / AM Engineer</span>
+                        <p><strong>Oct 2022 - Present | Skopje</strong></p>
+                        <ul>
+                            <li>Optimized and maintained applications for media and healthcare sectors.</li>
+                            <li>Developed blood storage and donation software.</li>
+                            <li>Led projects integrating OpenAI APIs and Kafka microservices.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6">
+                <div class="card hoverable rounded">
+                    <div class="card-content">
+                        <span class="card-title">Innovation Labs</span>
+                        <p><strong>2023 - 2024</strong></p>
+                        <ul>
+                            <li>Created Django and Spring Boot platforms for accessibility scanning and collaboration.</li>
+                            <li>Integrated modern frameworks like OpenAI GPT.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>
+    <!-- Projects Section -->
+    <section id="projects" class="section container">
+        <h2 class="center-align section-title">Projects</h2>
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="card hoverable rounded">
+                    <div class="card-content">
+                        <span class="card-title">CareConnect</span>
+                        <p>A platform to help families easily connect with caregivers, featuring Spring Boot backend and Next.js frontend.</p>
+                        <ul>
+                            <li>Payment integration for easy transaction management.</li>
+                            <li>Verification system for caregiver certifications.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card hoverable rounded">
+                    <div class="card-content">
+                        <span class="card-title">Accessibility Scanner</span>
+                        <p>An automated tool for detecting and fixing accessibility issues in websites.</p>
+                        <ul>
+                            <li>Uses AI and open-source tools for comprehensive accessibility analysis.</li>
+                            <li>Integrated with Spring Boot for backend and OpenAI GPT for suggestions.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card hoverable rounded">
+                    <div class="card-content">
+                        <span class="card-title">Nasekade</span>
+                        <p>Project built during Startup Weekend Skopje, a platform for connecting people with local businesses.</p>
+                        <ul>
+                            <li>Deployed on Vultr, using Spring Boot and Docker Compose for scalability.</li>
+                            <li>Incorporates SSL for secure connections and PostgreSQL for database management.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section container">
+        <h2 class="center-align section-title">Contact</h2>
+        <p class="center-align">Let's work together on your next project!</p>
+        <div class="center-align">
+            <a href="mailto:kuzmanoski.stefan@yahoo.com" class="btn gradient-button">Email Me</a>
+            <hr style="max-width: 25%;">
+            <a href="https://www.linkedin.com/in/stefan-kuzmanoski-2664371a7/" class="btn gradient-button" target="_blank">LinkedIn Profile</a>
+        </div>
+    </section>
+
+    <footer class="page-footer black">
         <div class="container">
-            <p>© 2024 Stefan Kuzmanoski. All rights reserved.</p>
+            <p class="center-align">© 2024 Stefan Kuzmanoski. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        // Initialize Sidenav
+        document.addEventListener('DOMContentLoaded', function () {
+            const elems = document.querySelectorAll('.sidenav');
+            M.Sidenav.init(elems);
+        });
+        // Smooth Scroll
+        document.querySelectorAll('.scroll-link').forEach(link => {
+            link.addEventListener('click', e => {
+                e.preventDefault();
+                document.querySelector(e.target.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
