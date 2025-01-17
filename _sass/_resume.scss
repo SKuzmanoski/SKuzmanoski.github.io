@@ -1,0 +1,399 @@
+.section-header {
+  border-bottom: 2px solid #e0e0e0;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.section-header h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 1.75rem;
+  letter-spacing: -0.05rem;
+  margin: 0;
+}
+
+.page-header {
+  padding: 1.5rem 0;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.page-header .avatar {
+  width: 200px;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: block;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  position: relative;
+}
+
+.page-header .avatar:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.3), 0 0 60px rgb(70, 128, 193);
+  border-radius: 10%;
+}
+
+.page-header .avatar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background: radial-gradient(circle, rgba(0, 255, 255, 0.2), rgba(0, 255, 255, 0));
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transform: scale(1.5);
+  pointer-events: none;
+}
+
+.page-header .avatar:hover::after {
+  opacity: 1;
+  transform: scale(1);
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+.page-header .header-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: -0.15rem;
+  line-height: 1;
+  margin: 1rem 0 0;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.page-header .header-contact-info {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+.page-header .header-contact-info p a {
+  color: inherit;
+}
+
+.page-header .title-bar {
+  border-bottom: 2px solid #e0e0e0;
+  margin-top: 2rem;
+  padding: 0.4rem 0;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.page-header .title-bar .header-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 1.75rem;
+  line-height: 2rem;
+  letter-spacing: -0.05rem;
+  text-align: center;
+  margin: 0 0 0.5rem;
+}
+
+.page-header .executive-summary {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #333;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-left: 5px solid rgb(70, 128, 193);
+  margin: 2rem 0;
+  border-radius: 5px;
+  animation: fadeInUp 1.5s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-header .executive-summary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 115, 230, 0.1), transparent);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  pointer-events: none;
+}
+
+.page-header .executive-summary:hover::before {
+  opacity: 1;
+}
+
+.icon-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  top: 4px;
+  text-align: center;
+  border-top: 2px solid #c7c7c7;
+  padding-top: 0.4rem;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.icon-links .icon-link-item {
+  display: inline-block;
+  margin-left: 5px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.icon-links .icon-link {
+  display: inline-block;
+}
+
+.icon-links .icon-link:hover .icon path {
+  fill: #333;
+  transition: all 0.2s ease;
+}
+
+.icon-links .icon {
+  height: 28px;
+}
+
+.contact-button {
+  border-radius: 3px;
+  background-color: #efefef;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  margin: 1.5rem auto;
+  width: 220px;
+  font-size: 1.375rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  color: #333;
+  line-height: 55px;
+  transition: all 0.2s ease;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+.contact-button:hover {
+  background-color: rgb(59, 107, 163);
+  color: #fff;
+}
+
+.contact-button.not-looking {
+  width: 400px;
+}
+
+.content-section {
+  margin: 0 0 3rem;
+  animation: fadeInUp 1.5s ease-in-out;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.content-section .resume-item {
+  margin-bottom: 2rem;
+  animation: fadeInUp 1.5s ease-in-out;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-left: 0.5px solid rgb(70, 128, 193);
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-section .resume-item:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.content-section .resume-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(to bottom, rgb(70, 128, 193), #005bb5);
+  transition: width 0.3s ease;
+}
+
+.content-section .resume-item-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin: 0 0 0.75rem;
+  font-size: 1.5rem;
+  letter-spacing: -0.05rem;
+  line-height: 1;
+  position: relative;
+}
+
+.content-section .resume-item-title::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(70, 128, 193);
+  transition: width 0.3s ease;
+}
+
+.content-section .resume-item-title:hover::after {
+  width: 25%;
+}
+
+.content-section .resume-item-details {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.125rem;
+  margin: 0 0 0.75rem;
+  line-height: 1;
+}
+
+.content-section .resume-item-details.award-title {
+  font-size: 1rem;
+}
+
+.content-section .resume-item-title a,
+.content-section .resume-item-details a,
+.content-section .resume-item-copy a,
+.content-section .resume-item-list a {
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid;
+  transition: color 0.2s ease, border-bottom 0.2s ease;
+}
+
+.content-section .resume-item-title a:hover,
+.content-section .resume-item-details a:hover,
+.content-section .resume-item-copy a:hover,
+.content-section .resume-item-list a:hover {
+  border-bottom: none;
+  color: rgb(70, 128, 193);
+}
+
+.content-section .resume-item-copy {
+  margin: 0.75rem 0 0;
+}
+
+.page-footer {
+  font-family: 'Montserrat', sans-serif;
+  border-top: 4px solid #c7c7c7;
+  padding-top: 1.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+.page-footer .footer-line {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  color: #999;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+.page-footer .footer-line > a {
+  font-weight: 700;
+  color: #333;
+  transition: color 0.2s ease;
+}
+
+.page-footer .footer-line > a:hover {
+  color: #000;
+}
+
+.print-only {
+  display: none !important;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  body {
+    font-size: 12px;
+    line-height: 1rem;
+  }
+  .page-header {
+    padding: 1rem 0 0.2rem;
+  }
+  .page-header .header-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin: 0 0 0.2rem;
+  }
+  .section-header {
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+  }
+  .section-header h2 {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+  .content-section {
+    margin: 0 0 1rem;
+  }
+  .content-section .resume-item {
+    margin-bottom: 1rem;
+  }
+  .content-section .resume-item-title {
+    font-size: 16px;
+    line-height: 0.7em;
+  }
+  .content-section .resume-item-details {
+    font-size: 12px;
+    margin: 0 0 0.75rem;
+    line-height: 0.7em;
+    font-style: italic;
+  }
+  .content-section .resume-item-details.award-title {
+    font-size: 11px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

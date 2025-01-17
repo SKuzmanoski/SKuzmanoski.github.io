@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}">
+
+    <div class="wrapper" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="telephone" content="+38977891617"/>
+      <meta itemprop="address" content="Skopje"/>
+
+      <header class="page-header">
+
+        {% if site.resume_avatar == 'true' %}
+        <img src="images/stefan-image-bridge.webp" alt="Stefan Kuzmanoski's photo" class="avatar no-print" itemprop="image">
+        {% endif %}
+
+        <h1 class="header-name" itemprop="name">Stefan Kuzmanoski</h1>
+
+        {% if site.display_header_contact_info == 'true' %}
+        <div class="header-contact-info">
+          <p>(+389) 77891617<br>stefan.skuz.kuzmanoski@gmail.com<br>LinkedIn Link</p>
+        </div>
+        {% endif %}
+
+        <div class="title-bar no-print">
+          <h2 class="header-title" itemprop="jobTitle">Software Engineer</h2>
+          {% include icon-links.html %}
+        </div>
+
+        <div class="executive-summary" itemprop="description">
+          Software Engineer, Passionate About Building Solutions That Make a Difference
+        </div>
+
+        {% if site.resume_looking_for_work == 'yes' %}
+        <a href="mailto:stefan.skuz.kuzmanoski@gmail.com" class="contact-button no-print" itemprop="email">Contact me</a>
+        {% elsif site.resume_looking_for_work == 'no' %}
+        <a class="contact-button not-looking no-print">I'm not looking for work right now.</a>
+        {% endif %}
+      </header>
+
+      {% if site.resume_section_experience %}
+      <section class="content-section">
+        <header class="section-header">
+          <h2>Experience</h2>
+        </header>
+
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">Endava</h3>
+          <h4 class="resume-item-details" itemprop="description">AM Engineer &bull; Oct 2022 - PRESENT</h4>
+          <p class="resume-item-copy">Contributed to developing, maintaining, and optimizing applications in media and healthcare domains, focusing on reliability and efficiency. Worked with Java, Oracle DB, PostgreSQL, Kafka, and microservices architecture, enhancing performance through real-time data processing and CI/CD practices. Collaborated with cross-functional teams using tools like Jira, Slack, and Confluence. Monitored and resolved application issues with Kibana and Elasticsearch and generated reports using Jasper iReport.</p>
+        </div>
+
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">Endava</h3>
+          <h4 class="resume-item-details" itemprop="description">Key Role as Engineer (Innovation Lab) &bull; 2024-2025</h4>
+          <p class="resume-item-copy">Engaged in the development of an accessibility-focused software solution for Innovation Lab 2024/2025. Built a Spring Boot backend integrated with the OpenAI GPT API and an open-source accessibility scanner for accessibility issue detection. Co-configured a Docker Compose environment to deploy services, including Spring Boot, the scanner, and Cassandra.</p>
+        </div>
+
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">Endava</h3>
+          <h4 class="resume-item-details" itemprop="description">Junior AM Engineer &bull; Jun 2022 - Sep 2022</h4>
+          <p class="resume-item-copy">Assisted senior engineers in maintaining and troubleshooting healthcare applications, focusing on Java, Eclipse, and database management (Oracle and PostgreSQL). Collaborated on debugging and performance enhancements.</p>
+        </div>
+
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">A1 Telecom</h3>
+          <h4 class="resume-item-details" itemprop="description">Service and Resource Management &bull; Oct 2021 - Apr 2022</h4>
+          <p class="resume-item-copy">Maintained and enhanced .NET applications, managing Oracle DB for reporting, data analysis, and procedure updates. Developed apps for scheduling kitchen space and inventory management, improving efficiency. Added new features, fixed bugs, and optimized performance. Collaborated on database merging projects, ensuring data integrity and resolving discrepancies. Utilized .NET, C#, IIS, and Oracle SQL Developer for development and database management.</p>
+        </div>
+
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">A1 Telecom</h3>
+          <h4 class="resume-item-details" itemprop="description">Web development internship &bull; May 2021 - Oct 2021</h4>
+          <p class="resume-item-copy">Internship focused on web development.</p>
+        </div>
+      </section>
+      {% endif %}
+
+      {% if site.resume_section_education %}
+      <section class="content-section">
+        <header class="section-header">
+          <h2>Education</h2>
+        </header>
+
+        <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
+          <h3 class="resume-item-title" itemprop="name">FINKI</h3>
+          <h4 class="resume-item-details group">SEIS (Software Engineering and Information Systems) &bull; 2018 - 2022</h4>
+          <p class="resume-item-copy">Completed the English-taught program at FINKI, studying subjects such as Advanced Programming, Web Programming, Problem Solving, Algorithms and Data Structures, Databases, Operating Systems, Integrated Systems, and Software Analysis and Design. For the diploma thesis, developed a solution for scanning website cybersecurity vulnerabilities using the OpenAI API, a Spring Boot backend, a Next.js frontend, and ZAProxy as a (micro)service.</p>
+        </div>
+
+        <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
+          <h3 class="resume-item-title" itemprop="name">Highschool Naum Naumovski Borce/ PMA</h3>
+          <h4 class="resume-item-details group">High School Diploma &bull; 2014 - 2018</h4>
+          <p class="resume-item-copy">Completed high school education.</p>
+        </div>
+      </section>
+      {% endif %}
+
+      {% if site.resume_section_projects %}
+      <section class="content-section">
+        <header class="section-header">
+          <h2>Projects</h2>
+        </header>
+
+        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
+          <meta itemprop="creator" content="Stefan Kuzmanoski" />
+          <h3 class="resume-item-title">CareConnect</h3>
+          <h4 class="resume-item-details">AM Engineer &bull; Nov 2024</h4>
+          <p class="resume-item-copy">Participated in Startup Weekend Skopje (for a second time), where my team and I developed CareConnect, a caregiving platform concept. Leading the project from idea to a fully formed business model, we collaborated closely with mentors and demonstrated innovation, teamwork, and adaptability. Our efforts were recognized with first place at the event, highlighting the creativity and dedication of our team.</p>
+        </div>
+
+        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
+          <meta itemprop="creator" content="Stefan Kuzmanoski" />
+          <h3 class="resume-item-title">Nasekade</h3>
+          <h4 class="resume-item-details">Co-Founder &bull; Jun 2022 - Sep 2022</h4>
+          <p class="resume-item-copy">Third place on SWS for creating Nasekade, deployed on Vultr, technologies used: Java, Spring Boot, Docker-Compose, SSL, PostgreSQL.</p>
+        </div>
+      </section>
+      {% endif %}
+
+      {% if site.resume_section_skills %}
+      <section class="content-section">
+        <header class="section-header">
+          <h2>Skills</h2>
+        </header>
+
+        <div class="resume-item">
+          <h4 class="resume-item-details">Java</h4>
+          <p class="resume-item-copy">Proficient in Java development, including Spring Boot and microservices architecture.</p>
+        </div>
+
+        <div class="resume-item">
+          <h4 class="resume-item-details">Databases</h4>
+          <p class="resume-item-copy">Experience with Oracle DB and PostgreSQL.</p>
+        </div>
+
+        <div class="resume-item">
+          <h4 class="resume-item-details">DevOps</h4>
+          <p class="resume-item-copy">Familiar with Docker, Docker Compose, and CI/CD practices.</p>
+        </div>
+
+        <div class="resume-item">
+          <h4 class="resume-item-details">API Integration</h4>
+          <p class="resume-item-copy">Integrated OpenAI GPT API and other third-party services.</p>
+        </div>
+
+        <div class="resume-item">
+          <h4 class="resume-item-details">Teamwork</h4>
+          <p class="resume-item-copy">Strong teamwork and collaboration skills, working effectively in cross-functional teams.</p>
+        </div>
+      </section>
+      {% endif %}
+
+      {% if site.resume_section_recognition %}
+      <section class="content-section">
+        <header class="section-header">
+          <h2>Recognition</h2>
+        </header>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title">First Place</h3>
+          <h4 class="resume-item-details">Startup Weekend Skopje &bull; 2024</h4>
+          <p class="resume-item-copy">Recognized with first place at Startup Weekend Skopje for the CareConnect project.</p>
+        </div>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title">Third Place</h3>
+          <h4 class="resume-item-details">Startup Weekend Skopje &bull; 2022</h4>
+          <p class="resume-item-copy">Achieved third place at Startup Weekend Skopje for the Nasekade project.</p>
+        </div>
+      </section>
+      {% endif %}
+
+      <footer class="page-footer">
+        <p class="footer-line">Made by <a target="_blank" href="https://www.linkedin.com/in/stefan-kuzmanoski-2664371a7/">Stefan Kuzmanoski</a></p>
+      </footer>
+
+    </div>
+  </body>
+</html>

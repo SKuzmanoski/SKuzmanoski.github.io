@@ -1,0 +1,55 @@
+# Jobs
+- company: "Startup Weekend Skopje"
+  position: "AM Engineer"
+  duration: "Nov 2024"
+  summary: "Participated in Startup Weekend Skopje, leading the development of CareConnect, a caregiving platform concept. Recognized with first place at the event."
+
+- company: "Endava"
+  position: "AM Engineer"
+  duration: "Oct 2022 - Present"
+  summary: "Developed, maintained, and optimized applications in media and healthcare domains, focusing on reliability and efficiency."
+
+- company: "Endava"
+  position: "Team Founder (Innovation Lab 2024)"
+  summary: "Leading the development of an accessibility-focused software solution."
+
+- company: "Endava"
+  position: "Team Founder (Innovation Lab 2023)"
+  summary: "Led the development of a Django-based software platform for facilitating intra-company collaborations."
+
+- company: "Endava"
+  position: "Junior AM Engineer"
+  duration: "Jun 2022 - Sep 2022"
+  summary: "Assisted senior engineers in maintaining and troubleshooting healthcare applications."
+
+- company: "Startup Weekend Skopje (SWS)"
+  position: "Co-Founder of 'Nasekade'"
+  duration: "Jun 2022 - Sep 2022"
+  summary: "Third place on SWS for creating Nasekade."
+
+- company: "A1 Telecom"
+  position: "Service and Resource Management"
+  duration: "Oct 2021 - Apr 2022"
+  summary: "Maintained and enhanced .NET applications."
+
+- company: "A1 Telecom"
+  position: "Web Development Internship"
+  duration: "May 2021 - Oct 2021"
+# VP of Global Communications
+- company: Springfield International Human Rights Outreach
+  position: VP of Global Communications
+  duration: Oct, 2013 &mdash; Present
+  summary: Write about your core competencies in one or two sentences describing your position. If you held the position for a long time, it could be a longer section, including a couple bullet points        <ul class="resume-item-list"><li>A project you are proud of</li><li>Another awesome project</li><li>or a team or department you worked with</li></ul>
+
+# Director of Digital Stratgy
+- company: United Nations Human Rights Council
+  position: Director of Digital Strategy
+  duration:  Jun, 2010 &mdash; Sept, 2013
+  summary: If your stint was shorter, feel free to be brief and just call out the most meaningful points of your role. Be concise, and be meaninful. The person reading just needs enough to want to talk to you more about your experience.
+
+
+# Communications Coordinator
+- company: Springfield Women & Children's Center
+  position: Communications Coordinator
+  duration:   Jun, 2008  &mdash; May, 2010
+  summary: Led communication efforts across digital and traditional media channels for marketing and public relations, internal communication strategies, and coordinated support programs for the recipients of the center's services.

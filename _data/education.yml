@@ -1,0 +1,22 @@
+# Degree
+- uni: "FINKI"
+  degree: "SEIS (Software Engineering and Information Systems)"
+  year: "2018 – 2022"
+  summary: "Completed the English-taught program at FINKI, studying subjects such as Advanced Programming, Web Programming, Problem Solving, Algorithms and Data Structures, Databases, Operating Systems, Integrated Systems, and Software Analysis and Design."
+
+- uni: "High School Naum Naumovski Borce"
+  degree: "PMA"
+  year: "2014 - 2018"
+  summary: "Graduated from high school in Krusevo."
+- degree: Bachelor of Arts, Human Rights
+  uni: Yale University
+  year: 2004 &mdash; 2008
+  awards:
+    - award: Summa Cumme Laude graduate
+  summary: If you had any meaningful roles at college, feel free to write about them here
+
+- degree: High School Diploma
+  uni: Springfield High School
+  year: 2004
+  award: Most likely to succeed
+  summary: You can choose to have either a single or multiple awards

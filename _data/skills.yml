@@ -1,0 +1,29 @@
+# Skills
+- skill: "Java"
+  description: "Proficient in Java programming for application development."
+
+- skill: "Spring Boot"
+  description: "Experience in building applications using Spring Boot framework."
+
+- skill: "Django"
+  description: "Familiar with Django for web application development."
+
+- skill: "PostgreSQL"
+  description: "Skilled in using PostgreSQL for database management."
+
+- skill: "Microservices"
+  description: "Experience in developing microservices architecture."
+
+- skill: "CI/CD"
+  description: "Knowledge of Continuous Integration and Continuous Deployment practices."
+# Organizational leadership
+- skill: Organizational leadership
+  description: I have several years of experience leading organziations from community groups to business departments. From public speaking, to mentoring, to coordination of people and events, I can lead in any context.
+
+# Communications strategy
+- skill: Communications strategy
+  description: Content and marketing strategy,
+
+# Digital content development and creation
+- skill: Digital content development and creation
+  description: Copy writing, graphic design, web design, front-end web development, print design
